@@ -1,1 +1,1 @@
-# guialgoled55e9pla
+# Manual usuario LG OLED55E9PLA
