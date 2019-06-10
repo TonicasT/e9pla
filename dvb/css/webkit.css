@@ -1,0 +1,9 @@
+::-webkit-scrollbar{width:60px;background-color:#202020}
+::-webkit-scrollbar-button:start:decrement{height:60px;background:url(../img/scroll_arrow.png) no-repeat 0 0}
+::-webkit-scrollbar-button:start:decrement:hover{background-position:-60px 0}
+::-webkit-scrollbar-button:start:decrement:focus{background-position:-60px 0}
+::-webkit-scrollbar-button:end:increment{height:60px;background:url(../img/scroll_arrow.png) no-repeat 0 -60px}
+::-webkit-scrollbar-button:end:increment:hover{background-position:-60px -60px}
+::-webkit-scrollbar-button:end:increment:focus{background-position:-60px -60px}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-thumb{border-left:28px solid transparent;border-right:28px solid transparent;border-radius:2px;background-color:#999;background-clip:content-box}

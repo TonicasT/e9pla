@@ -1,0 +1,421 @@
+﻿@charset "utf-8";
+
+/* font */
+@font-face{ 
+	font-family:'Miso-Regular'; 
+	src:url('../font/miso-regular.eot'); 
+	src:url('../font/miso-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../font/miso-regular.woff') format('woff');
+}
+@font-face{
+	font-family:"Miso-Bold";
+	src:url('../font/miso-bold.eot'); 
+	src:url('../font/miso-bold.eot?#iefix') format('embedded-opentype'), 
+		url('../font/miso-bold.woff') format('woff');
+}
+@font-face{
+	font-family:"MuseoSans-Light";
+	src:url('../font/Museo SansLight.eot'); 
+	src:url('../font/Museo SansLight.eot?#iefix') format('embedded-opentype'), 
+		url('../font/Museo SansLight.woff') format('woff');
+}
+@font-face {
+	font-family: "MuseoSans-Medium";
+	src:url('../font/Museo SansNormal.eot'); 
+	src:url('../font/Museo SansNormal.eot?#iefix') format('embedded-opentype'), 
+		url('../font/Museo SansNormal.woff') format('woff');
+}
+@font-face{
+	font-family:"MuseoSans-Bold";
+	src:url('../font/Museo SansBold.eot'); 
+	src:url('../font/Museo SansBold.eot?#iefix') format('embedded-opentype'), 
+		url('../font/Museo SansBold.woff') format('woff');
+}
+@font-face{
+	font-family:"LG_Display-Light";
+	src:url('../font/LG_Display-Light.eot'); 
+	src:url('../font/LG_Display-Light.eot?#iefix') format('embedded-opentype'), 
+		url('../font/LG_Display-Light.woff') format('woff');
+}
+@font-face{
+	font-family:"LG_Display-Regular";
+	src:url('../font/LG_Display.eot'); 
+	src:url('../font/LG_Display.eot?#iefix') format('embedded-opentype'), 
+		url('../font/LG_Display.woff') format('woff');
+}
+
+/* header*/
+.header .title h1 {font-family:"Miso-Regular","LG_Display-Light"}
+.header .title h2 {font-family:"MuseoSans-Medium","LG_Display-Regular"}
+.header .button li .tooltip span {font-family:"Miso Bold","LG_Display-Regular"}
+
+/* main */
+.mainWrap .content ul li span {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* help guide */
+.helpGuide span {font-family:"MuseoSans-Light","LG_Display-Light"}
+.helpGuide em {font-family:"MuseoSans-Medium","LG_Display-Regular"}
+.helpGuide .bubble span {font-family:"MuseoSans-Medium","LG_Display-Regular"}
+
+/* search */
+.searchWrap .noticePopup span {font-family:"MuseoSans-Medium","LG_Display-Regular"}
+.searchWrap .header input {font-family:"Miso-Regular","LG_Display-Light"}
+.searchWrap .content div h3 {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.searchWrap .content div ul li a {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.searchWrap .content div ul li span {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+#widthcheck {font-family:"Miso-Regular","LG_Display-Light"}
+
+/* sub content */
+.backBtn span {font-family:"Miso-Regular","LG_Display-Regular"}
+.button a span {font-family:"Miso-Bold","LG_Display-Regular"}
+.largeButton span {font-family:"Miso-Bold","LG_Display-Regular"}
+.content .list ul li a h4 {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.content .list ul li a p {font-family:"MuseoSans-Light","LG_Display-Light"}
+.wrap .lnb ul li a {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.wrap .lnb ul li ul li a {font-family:"MuseoSans-Light","LG_Display-Light"}
+.more a {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* recently */
+.recentlyWrap .content .none p {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* result */
+.resultWrap .keyword h3 {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.resultWrap .keyword ul li a span {font-family:"Miso-Bold","LG_Display-Regular"}
+.resultWrap .resultList h3 {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* see all */
+.indexBtn ul li a span {font-family : "MuseoSans-Bold","LG_Display-Regular"};
+
+/* detail */
+.detailWrap .list h3 {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.detailWrap .list ul li a {font-family:"MuseoSans-Light","LG_Display-Light"}
+
+/* scroll bar */
+::-webkit-scrollbar{width:40px;background-color:#000}
+::-webkit-scrollbar-button:start:decrement{height:40px;background:url(../img/scroll_arrow.png) no-repeat -80px 0}
+::-webkit-scrollbar-button:end:increment{height:40px;background:url(../img/scroll_arrow.png) no-repeat 0 -40px}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-thumb{border-left:19px solid transparent;border-right:19px solid transparent;border-radius:2px;background-color:#999;background-clip:content-box}
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+body,input,textarea,select,table,button,code{font-weight:normal;font-size:11px;font-family:Helvetica,Arial,Sans-serif}
+body{position:relative;background-color:#000;word-wrap:break-word;word-break:keep-all}
+ul,ol{list-style:none}
+table{border-collapse:collapse}
+img,fieldset{border:0}
+a{text-decoration:none;cursor:pointer}
+label{cursor:pointer}
+em,address{font-style:normal}
+a.disabled { pointer-events: none; cursor: default; background:#cf0652; }
+
+/* layout */
+::-webkit-selection{background-color:transparent}
+   ::-moz-selection{background-color:transparent}
+		::selection{background-color:transparent}
+::-webkit-input-placeholder{color:#464646;padding-left:7px}
+   ::-moz-placeholder{color:#464646;padding-left:7px}
+	 :-ms-input-placeholder{color:#464646;padding-left:7px}
+html, body {overflow:hidden;height:100%}
+.wrap {position:relative;width:1280px;height:720px;padding:13px;box-sizing:border-box}
+.resultWrap, .recentlyWrap, .sitemapWrap, .detailWrap {padding-left:66px}
+
+/* loading */
+.loading {position:relative;position:absolute;top:0;left:0;z-index:9999;width:100%;height:100%;background-color:rgba(0,0,0,0.8)}
+.loading .icon {width:100%;height:100%;background:url(../img/spinner.gif) no-repeat 50% 50%}
+
+/* header */
+.header {position:relative;height:160px;border-top:1px solid #313131;border-bottom:4px solid #313131;box-sizing:border-box}
+.header .close {position:absolute;display:block;top:10px;right:0;width:40px;height:40px;background:url(../img/app_close_btn.png) no-repeat 0 0;overflow:hidden;text-indent:-999px;z-index:1000}
+.header .close:focus {background-position:0 -40px}
+.header .title h1 {font-size:80px;padding-top:7px;color:#ccc;text-transform:uppercase}
+.header .title h2 {font-size:19px;color:#a6a6a6}
+.header .button {position:absolute;right:-7px;bottom:3px}
+.header .button li {float:left}
+.header .button li a {display:block;padding:7px}
+.header .button li a span {display:block;height:40px;border-radius:20px;background:#4c4c4c;color:#ccc}
+.header .button li a:focus span {background:#cf0652;color:#fff}
+.header .button li a.text span {line-height:40px;min-width:87px;box-sizing:border-box;padding:0 17px;font-size:18px;text-align:center;text-transform:uppercase;text-overflow:clip;white-space:nowrap}
+.header .button li a.icon span {width:40px;height:40px;background-position:0 0;background-repeat:no-repeat;overflow:hidden;text-indent:-999px}
+.header .button li a.icon:focus span {background-position:0 -40px}
+.header .button li a.icon:focus + .tooltip {display:block}
+.header .button li .tooltip {display:none;position:absolute;top:-48px;overflow:hidden;min-width:200px;z-index:1000}
+.header .button li .tooltip div {float:right}
+.header .button li .tooltip span {display:block;float:left;height:45px;background-image:url(../img/tooltip.png)}
+.header .button li .tooltip .left {width:17px;background-repeat:no-repeat;background-position:0 0}
+.header .button li .tooltip .text {overflow:hidden;background-repeat:repeat-x;background-position:-27px 0;font-size:18px;line-height:40px;color:#fff;text-align:center;text-overflow:ellipsis;white-space:nowrap;text-transform:uppercase;min-width:35px;padding:0 11px;box-sizing:border-box;height:39px;background-color: #4c4c4c  }
+.header .button li .tooltip .right {width:17px;background-repeat:no-repeat;background-position:-184px 0}
+
+/* main */
+.header .button li a.icon.notice span {background-image:url(../img/listaction_B_info.png)}
+.header .button li a.icon.help span {background-image:url(../img/listaction_B_quse.png)}
+.mainWrap .header .button li a.icon.notice + .tooltip {right:80px}
+.mainWrap .header .button li a.icon.help + .tooltip {right:27px}
+.mainWrap .content {padding:35px 21px 0}
+.mainWrap .content ul {overflow:hidden}
+.mainWrap .content ul li {float:left;width:288px;height:239px;margin-right:20px}
+.mainWrap .content ul li:nth-child(4n) {margin-right:0}
+.mainWrap .content ul li a {display:block;width:100%;height:144px;margin-bottom:9px;background-repeat:no-repeat;background-position:0 0}
+.mainWrap .content ul li a:focus {background-position:0 -144px}
+.mainWrap .content ul li:nth-child(1) a {background-image:url(../img/main_logo_aboutlgsmart.png)}
+.mainWrap .content ul li:nth-child(2) a {background-image:url(../img/main_logo_howtocontrol.png)}
+.mainWrap .content ul li:nth-child(3) a {background-image:url(../img/main_logo_enjoy.png)}
+.mainWrap .content ul li:nth-child(4) a {background-image:url(../img/main_logo_howtouse.png)}
+.mainWrap .content ul li:nth-child(5) a {background-image:url(../img/main_logo_playother.png)}
+.mainWrap .content ul li:nth-child(6) a {background-image:url(../img/main_logo_benefical.png)}
+.mainWrap .content ul li:nth-child(7) a {background-image:url(../img/main_logo_tour.png)}
+.mainWrap .content ul li:nth-child(8) a {background-image:url(../img/main_logo_solve.png)}
+.mainWrap .content ul li span {display:block;font-size:21px;line-height:23px;color:#a6a6a6;text-align:center;padding:0 33px}
+
+/* help guide */
+.helpGuide {position:absolute;top:0;left:0;width:1280px;height:720px;background:url(../img/userguide_helpguide_bg.png) no-repeat 0 0;font-size:18px;color:#fff;;z-index:2000}
+.helpGuide span {display:inline-block}
+.helpGuide em {font-size:20px;color:#fff}
+.helpGuide p {position:absolute;text-align:right}
+.helpGuide p.notice {top:37px;right:25px}
+.helpGuide p.help {top:192px;right:87px}
+.helpGuide p.contents {top:366px;left:641px}
+.helpGuide .bubble {display:table;position:absolute;right:237px;bottom:112px;min-height:80px}
+.helpGuide .bubble span {display:table-cell;vertical-align:middle;padding:13px 0}
+.helpGuide .bubble .left {width:22px;border-radius:12px 0 0 12px;background-color:#998768}
+.helpGuide .bubble .text {max-width:309px;font-size:20px;line-height:24px;color:#fff;padding:13px 9px 17px 0;border-top-right-radius:12px;border-bottom-right-radius:12px;background-color:#998768}
+.helpGuide .bubble .right {width:13px;background-image:url(../img/guide_bubble2.png);background-repeat:no-repeat;background-position:-294px center}
+.helpGuide .largeButton span {position:absolute;left:50%;bottom:19px;width:146px;margin-left:-90px}
+
+/* sub header */
+.header.small {height:85px;margin-left:7px}
+.header.small .logo {float:left;margin-top:9px;margin-right:15px}
+.header.small .logo img {width:57px;height:57px}
+.header.small .title {float:left}
+.header.small .title h1 {margin-top:1px;padding-top:0;font-size:40px;line-height:50px}
+.header.small .title h2 {margin-top:1px}
+.header.small .button {right:47px}
+.header.small .button li .tooltip {top:52px;min-width:400px}
+.header.small .button li .tooltip span {background-image:url(../img/tooltip_down.png)}
+.header.small .button li .tooltip .text {line-height: 35px;margin-top: 6px}
+.header.small .button li .tooltip .right {background-position:-385px 0}
+
+/* sub content */
+.container {overflow:hidden;padding-top:22px;box-sizing:border-box}
+.backBtn a {position:absolute;top:0px;left:0;width:66px;height:720px;z-index:1000}
+.backBtn span {display:block;font-size:21px;color:#ccc;width:40px;margin:13px;margin-left:13px;padding-top:3px;border-top:4px solid #ccc}
+.backBtn a:focus {background:#cf0652}
+.backBtn a:focus span {color:#fff;border-color:#fff}
+.button a {display:inline-block}
+.button a span {display:block;background:#4c4c4c;color:#ccc;text-align:center;text-transform:uppercase}
+.button a:focus span {background:#cf0652;color:#fff}
+.largeButton a span {min-width:146px;padding:0 17px;height:57px;line-height:57px;border-radius:28px;font-size:24px}
+.smallButton a span {min-width:87px;height:40px;line-height:40px;padding:0 17px;border-radius:20px;font-size:18px}
+.content .list {position:relative}
+.content .list ul li a {display:block;box-sizing:border-box}
+.content .list ul li a:focus {background:#cf0652}
+.content .list ul li a h4 {color:#fff}
+.content .list ul li a em {color:#ffb80d}
+.content .list ul li a p {color:#a6a6a6}
+.content .list ul li a:focus p {color:#fff}
+.wrap aside {float:left}
+.wrap section {float:left}
+.wrap .lnb {position:relative;width:293px;height:587px;margin-right:27px}
+.wrap .lnb .menu {width:100%;height:100%;overflow-x:hidden;overflow-y:hidden}
+.wrap .lnb .track-disable{position:absolute;z-index:1000;top:0;right:0;width:40px;height:587px;background-color:red;opacity:0}
+.wrap .lnb .scroll-arrow {display:none}
+.wrap .lnb ul li {margin-bottom:11px}
+.wrap .lnb ul li:last-child {margin-bottom:0}
+.wrap .lnb ul li a {display:block;width:100%;padding:3px;box-sizing:border-box;font-size:23px;color:#a6a6a6;word-break:keep-all;} 
+.wrap .lnb ul li a span.point {display:inline-block;width:13px;height:13px;margin-right:13px;background:url(../img/selectable_item_selected.png) no-repeat 0 0}
+.wrap .lnb ul li a:focus {background:#cf0652;color:#fff}
+.wrap .lnb ul li a:focus span.point {background-position:0 -13px}
+.wrap .lnb ul li a span.arrow {display:inline-block;width:13px;height:7px;margin-left:13px;vertical-align:middle;background:url(../img/accordion_arrow.png) no-repeat 0 0}
+.wrap .lnb ul li a:focus span.arrow {background-position:-13px 0}
+.wrap .lnb ul li a.open span.arrow {background-position:0 -7px}
+.wrap .lnb ul li a.open:focus span.arrow {background-position:-13px -7px}
+.wrap .lnb ul li ul {margin-left:13px;margin-top:7px}
+.wrap .lnb ul li ul li a {font-size:19px;width:100%}
+.wrap .list {height:587px;overflow-y:auto}
+.wrap .list ul li {margin-bottom:28px}
+.wrap .list ul li:last-child  {margin-bottom:0}
+.wrap .list ul li a {padding:7px}
+.wrap .list ul li a h4 {font-size:23px;margin-bottom:7px}
+.wrap .list ul li a p {font-size:17px;line-height:23px}
+.wrap .content {position:relative;width:100%;height:587px}
+.wrap .content iframe {border:none}
+.more {margin-left:7px;width:1154px;height:38px;margin-top:27px}
+.more a {display:block;height:38px;line-height:38px;text-align:center;font-size:23px;color:#a6a6a6;border-top:1px solid #595959;box-sizing:border-box}
+.more a:focus {background:#cf0652;color:#fff;border-color:#cf0652}
+
+/* recently */
+.recentlyWrap .content .none {width:1200px;height:586px;text-align:center;background:url(../img/no_bean.png) no-repeat 50% 60px;margin-left:-27px}
+.recentlyWrap .content .none p {font-size:20px;color:#4d4d4d;box-sizing:border-box;padding-top:388px;margin-bottom:32px}
+.recentlyWrap .list ul li a{width:1160px;}
+/* result */
+.resultWrap .header .title {width:100%}
+.resultWrap .header .title h1 {text-transform:none;white-space:pre;}
+.resultWrap .container {padding-top:17px}
+.resultWrap .content {height:593px}
+.resultWrap .keyword {overflow:hidden;margin-left:7px;margin-bottom:31px}
+.resultWrap .keyword h3 {float:left;line-height:53px;font-size:19px;color:#a6a6a6;margin-right:13px}
+.resultWrap .keyword ul {float:left;overflow:hidden;height:53px}
+.resultWrap .keyword ul li {float:left}
+.resultWrap .keyword ul li a {display:inline-block;overflow:hidden;width:171px;height:40px;line-height:40px;padding:7px}
+.resultWrap .keyword ul li a span {display:block;float:left;overflow:hidden;width:20px;height:40px;font-size:18px;background:#4d4d4d;color:#a6a6a6;text-align:center;white-space:nowrap;text-overflow:ellipsis}.resultWrap .keyword ul li a:focus span {background:#cf0652;color:#fff}
+.resultWrap .keyword ul li a:focus span {background:#cf0652;color:#fff}
+.resultWrap .keyword ul li a span.left {border-radius:20px 0 0 20px}
+.resultWrap .keyword ul li a span.right {border-radius:0 20px 20px 0}
+.resultWrap .keyword ul li a span.text {width:131px}
+.resultWrap .resultList {position:relative}
+.resultWrap .resultList h3 {width:1154px;height:20px;line-height:20px;margin-left:7px;font-size:15px;font-style:italic;color:#a6a6a6;border-bottom:1px solid #313131;box-sizing:border-box;margin-bottom:20px}
+.resultWrap .resultList .list {height:553px}
+.resultWrap .resultList .list ul {width:1161px}
+.resultWrap .keyword + .resultList .list {height:469px}
+
+/* detail */
+.detailWrap .container {margin-left:3px}
+.detailWrap .content {width:877px}
+.detailWrap .content iframe {padding-left:3px;box-sizing:border-box}
+.detailWrap .list h3 {width:781px}
+.detailWrap .list ul {width:801px}
+.detailWrap .list h3 {font-size:27px;color:#fff;margin-left:3px;margin-bottom:18px;padding-bottom:9px;border-bottom:1px solid #313131}
+.detailWrap .list ul {margin-bottom:67px}
+.detailWrap .list ul li {margin-bottom:11px}
+.detailWrap .list ul li a {width:395px;padding:3px;font-size:20px;color:#a6a6a6}
+.detailWrap .list ul li a:focus {color:#fff}
+
+/* see all */
+.detailWrap .index .navWrap {height:40px;margin-top:-12px;margin-bottom:16px}
+.detailWrap .index .navigator {overflow:hidden;width:760px}
+.detailWrap .index .navigator .navList {float:left;width:680px;height:40px;box-sizing:border-box;overflow-y:hidden;overflow-x:auto}
+.detailWrap .index .navigator .navList::-webkit-scrollbar {display:none}
+.detailWrap .index .navigator .navList ul {display:table}
+.detailWrap .index .navigator .navList ul li {display:table-cell}
+.detailWrap .index .navigator .navList ul li a {display:inline-block;width:40px;height:40px;line-height:40px;border-radius:40px;text-align:center;font-size:23px;color:#a6a6a6}
+.detailWrap .index .navigator .navList ul li a:focus {background:#cf0652;color:#fff}
+.detailWrap .index .navigator .navList ul li.wordTwo a {width:61px}
+.detailWrap .index .navigator .navList ul li.wordThree a {width:85px}
+.detailWrap .index .navigator .navList ul li.wordFour a {width:108px}
+.detailWrap .index .navigator.max .navList ul {table-layout:fixed;width:100%}
+.detailWrap .index .navigator.max .navList ul li {text-align:center}
+.detailWrap .index .navigator.max.two {width:762px}
+.detailWrap .index .navigator.max.two .navList {width:682px}
+.detailWrap .index .navigator.max.two .navList ul li {width:62px}
+.detailWrap .index .navigator.max.three {width:760px}
+.detailWrap .index .navigator.max.three .navList {width:680px}
+.detailWrap .index .navigator.max.three .navList ul li {width:85px}
+.detailWrap .index .navigator.max.four {width:758px}
+.detailWrap .index .navigator.max.four .navList {width:678px}
+.detailWrap .index .navigator.max.four .navList ul li {width:113px}
+.detailWrap .index .navigator .arrow {float:left;width:40px;height:40px;background:url(../img/scroll_arrow2.png) no-repeat 0 0}
+.detailWrap .index .navigator .arrow.right {background-position:-40px 0}
+.detailWrap .index .navigator .arrow.left:focus {background-position:0 -40px}
+.detailWrap .index .navigator .arrow.right:focus {background-position:-40px -40px}
+.detailWrap .index .list {height:543px}
+.detailWrap .index .list h3,
+.detailWrap .index .list ul {width:769px}
+.detailWrap .index .list ul {overflow:hidden}
+.detailWrap .index .list ul li {float:left;width:50%}
+.detailWrap .index .list ul li a {width:380px;color:#ffb80d}
+.detailWrap .index .list ul li a:focus {color:#fff}
+.detailWrap .index .quick {position:absolute;bottom:0px;right:43px;z-index:1000}
+.detailWrap .index .quick a {display:block;width:40px;height:40px;background:url('../img/userguide_top.png') no-repeat 0 0;overflow:hidden;text-indent:-999px}
+.detailWrap .index .quick a:focus {background-position:0 -40px}
+
+/* arrow */
+.arrow-up{position:absolute;top:0;right:0;width:40px;height:40px;background:url(../img/scroll_arrow.png) no-repeat 0 0}
+.arrow-up:focus{background-position:-40px 0}
+.arrow-down{position:absolute;bottom:0;right:0;width:40px;height:40px;background:url(../img/scroll_arrow.png) no-repeat 0 -40px}
+.arrow-down:focus{background-position:-40px -40px}
+.track-disable{position:absolute;z-index:1000;top:40px;right:0px;width:40px;height:507px;background-color:red;opacity:0}
+.track-disabled{position:absolute;z-index:2;top:159px;right:13px;width:40px;height:507px;background-color:#000;opacity:0}
+.iframe-track{position:absolute;z-index:1;top:159px;right:13px;width:40px;height:507px;background-color:#000;opacity:0}
+.lnb .track-disable{position:absolute;z-index:1000;top:40px;right:0px;width:40px;height:507px;background-color:red;opacity:0}
+.lnb .scroll-hide {position:absolute;top:40px;right:0;width:40px;height:507px;background-color:#000;opacity:1;display:none}
+.resultWrap .arrow-up {top:40px}
+.resultWrap .track-disable {top:80px;height:389px}
+.scroll-hide {position:absolute;top:40px;right:0;width:40px;height:507px;background-color:#000;opacity:1;display:none}
+.detailWrap .content.index .arrow-up {top:44px}
+.detailWrap .content.index .track-disable {top:84px;height:463px}
+.detailWrap .content.index .scroll-hide {top:84px;height:463px} /* top:100px -> top:104px , height:447px -> 443px 로 수정 , sh */
+.resultWrap .scroll-hide {top:80px;height:389px}
+
+/* etc */
+#widthcheck {font-size:84px;top:-9999px;border:5px solid #aabbcc;color:#fff;position:absolute;white-space:pre;}
+.widthcheck2 {display:inline-block;font-size:18px;top:-9999px;border:5px solid #aabbcc;color:#fff;position:absolute}
+.marquee-disable {overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.marquee-enable {line-height:40px;overflow:hidden;display:block;word-break:break-all}
+.ltr-btn {direction: ltr;}
+
+/* RTL */
+html[dir=rtl] .detailWrap, .resultWrap {padding-right:7px}
+html[dir=rtl] .header .close {right:auto;left:0}
+html[dir=rtl] .header .button {right:auto;left:-7px}
+html[dir=rtl] .header .button li {float:right}
+html[dir=rtl] .header .button li .tooltip div {float:left}
+html[dir=rtl] .header .button li .tooltip .left{background-position:-183px 0;
+	-webkit-transform:scaleX(-1);
+	   -moz-transform:scaleX(-1);
+		 -o-transform:scaleX(-1);
+			transform:scaleX(-1);
+		-ms-filter:"FlipH";
+			filter:FlipH
+}
+html[dir=rtl] .header .button li .tooltip .right{background-position:0 0;
+	-webkit-transform:scaleX(-1);
+	   -moz-transform:scaleX(-1);
+		 -o-transform:scaleX(-1);
+			transform:scaleX(-1);
+		-ms-filter:"FlipH";
+			filter:FlipH
+}
+html[dir=rtl] .header .button li a.icon.help span {background-image:url(../img/listaction_B_quse_rtl.png)}
+html[dir=rtl] .header .button li a.icon.help.heb span {background-image:url(../img/listaction_B_quse.png)}
+html[dir=rtl] .mainWrap .header .button li a.icon.notice + .tooltip {right:auto;left:80px}
+html[dir=rtl] .mainWrap .header .button li a.icon.help + .tooltip {right:auto;left:27px}
+html[dir=rtl] .helpGuide {right:0px;background:url(../img/userguide_helpguide_bg_rtl.png) no-repeat 0 0}
+html[dir=rtl] .helpGuide p {text-align:left}
+html[dir=rtl] .helpGuide p.notice {right:auto;left:25px}
+html[dir=rtl] .helpGuide p.help {right:auto;left:87px}
+html[dir=rtl] .helpGuide p.contents {left:auto;right:641px}
+html[dir=rtl] .helpGuide .bubble {right:auto;left:237px}
+html[dir=rtl] .helpGuide .bubble .left {border-radius:0 12px 12px 0}
+html[dir=rtl] .helpGuide .bubble .text {padding:13px 0 17px 9px;border-radius:12px 0 0 12px}
+html[dir=rtl] .helpGuide .bubble .right {background-image:url(../img/guide_bubble2_rtl.png);background-position:0 bottom}
+html[dir=rtl] .header.small {margin-right:7px}
+html[dir=rtl] .header.small .logo {float:right;margin-right:0;margin-left:15px}
+html[dir=rtl] .header.small .title {float:right}
+html[dir=rtl] .header.small .button {right:auto;left:47px}
+html[dir=rtl] .header.small .button li .tooltip  .left{background-position:-383px 0;
+	-webkit-transform:scaleX(-1);
+	   -moz-transform:scaleX(-1);
+		 -o-transform:scaleX(-1);
+			transform:scaleX(-1);
+		-ms-filter:"FlipH";
+			filter:FlipH
+}
+html[dir=rtl] .header.small .button li .tooltip .right{background-position:0 0;
+	-webkit-transform:scaleX(-1);
+	   -moz-transform:scaleX(-1);
+		 -o-transform:scaleX(-1);
+			transform:scaleX(-1);
+		-ms-filter:"FlipH";
+			filter:FlipH
+}
+html[dir=rtl] .backBtn span {direction:ltr;margin-left:0;text-align:left}
+html[dir=rtl] .wrap .lnb .scroll-hide {left:0;right:auto}
+html[dir=rtl] .wrap .lnb ul li a span.point {margin-right:0;margin-left:13px}
+html[dir=rtl] .wrap .lnb ul li a span.arrow {margin-left:0;margin-right:13px}
+html[dir=rtl] .wrap .lnb ul li ul {margin-left:0;margin-right:13px}
+html[dir=rtl] .resultWrap .keyword {margin-left:0;margin-right:7px}
+html[dir=rtl] .resultWrap .keyword h3 {float:right;margin-left:13px;margin-right:0}
+html[dir=rtl] .resultWrap .keyword ul {float:right}
+html[dir=rtl] .resultWrap .resultList h3 {text-indent:3px;margin-left:0;margin-right:7px}
+html[dir=rtl] .detailWrap .container {margin-left:auto;margin-right:7px}
+html[dir=rtl] .detailWrap .list h3 {margin-right:3px}
+html[dir=rtl] .detailWrap .index .navigator {float:right}
+html[dir=rtl] .detailWrap .index .list ul li {float:right}
+html[dir=rtl] .detailWrap .index .quick {right:auto;left:43px}
+html[dir=rtl] .arrow-up{right:auto;left:0}
+html[dir=rtl] .arrow-down{right:auto;left:0}
+html[dir=rtl] .track-disable{right:auto;left:0}
+html[dir=rtl] .track-disabled{position:absolute;z-index:2;top:159px;right:850px;width:40px;height:507px;background-color:#000;opacity:0}
+html[dir=rtl] .iframe-track{position:absolute;z-index:1;top:159px;right:850px;width:40px;height:507px;background-color:#000;opacity:0}
+html[dir=rtl] .scroll-hide {left:0;right:auto}
