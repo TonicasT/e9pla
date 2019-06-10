@@ -1,0 +1,167 @@
+﻿@charset "utf-8";
+@import url('font.css');
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button{margin:0;padding:0}
+body,input,textarea,select,table,button,code{font-weight:normal;font-size:20px;font-family:Helvetica,Arial,Sans-serif}
+body{position:relative;background-color:#000;word-wrap:break-word;word-break:break-word}
+ul,ol{list-style:none}
+table{border-collapse:collapse}
+img,fieldset{border:0}
+img{display:inline-block;vertical-align:text-top;zoom:0.7}
+a{text-decoration:none;cursor:pointer}
+label{cursor:pointer}
+em,address{font-style:normal}
+sub,sup{line-height:0}
+/*html{overflow-y:hidden;width:773px}*/
+html{width:773px}
+
+/* 영역선택 막기 */
+::-webkit-selection{background-color:transparent}
+   ::-moz-selection{background-color:transparent}
+		::selection{background-color:transparent}
+
+/* 제목 */
+.title-title-1{margin-top:67px;margin-bottom:13px;padding-left:23px;background:url(../img/icon_note.png) no-repeat 0 5px;font-size:27px;color:#fff}
+.title-title-2{margin-top:53px;margin-bottom:13px;font-size:23px;color:#fff}
+.title-title-1 + .title-title-2 {margin-top:33px}
+.title-title-2 + .table-basic {margin-top:33px}
+.story > *:first-child{margin-top:0 !important}
+
+/* 문장 */
+.text-body{margin-bottom:13px;font-size:20px;line-height:27px;color:#a6a6a6}
+.text-body-note{margin-top:17px;padding-left:21px;background:url(../img/point.png) no-repeat 1px 9px;font-size:19px;line-height:24px;color:#a6a6a6}
+.text-body-note p img {margin-top:20px;margin-bottom:17px}
+.text-body-note .table-basic{margin-top:7px}
+.text-body-note + .text-body ol {margin-top:33px}
+.text-body-note + .text-body-note {margin-top:10px;margin-bottom:10px}
+.text-body-note:last-of-type {margin-bottom:17px}
+
+/* 주석 */
+.annotation{position:relative;top:-.5em;font-size:.5em;vertical-align:top}
+.annotation-line{display:block;width:70px;height:1px;margin:14px 0 8px;background-color:#a6a6a6}
+
+/* 목록 */
+.text-body > ol{margin-top:27px}
+.text-body ol > li{position:relative;counter-increment:number;margin-bottom:20px;padding-left:33px}
+.text-body ol > li:last-child{margin-bottom:0}
+.text-body ol > li:before{content:'0' counter(number);position:absolute;top:0;left:0;font-size:19px;color:#fff}
+.text-body ol > li:nth-child(9)~li:before{content:'' counter(number)}
+.text-body ol li ol > li:before{content:''}
+.text-body ol li .imgBox {margin-top:20px;margin-bottom:33px}
+.text-body ul{margin:27px 0;font-size:19px;line-height:24px}
+.text-body > ul{margin-left:7px !important}
+.text-body ul > li{position:relative;margin:0 0 7px 15px !important;padding-left:13px}
+.text-body ul > li:last-child{margin-bottom:0 !important}
+.text-body ul > li:before{content:'● ';position:absolute;top:0;left:0;font-size:5px}
+.text-body ul li ul {margin:13px 0}
+.text-body ul li ul > li{position:relative;padding-left:13px}
+.text-body ul li ul > li:before{content:'○ ';position:absolute;top:0;left:0;font-size:7px}
+
+/* 옵션 목록 */
+.text-body-list {margin:27px 0;margin-left:20px}
+.text-body-list dl dt {margin-top:33px;margin-bottom:13px;font-size:21px;color:#a6a6a6}
+.text-body-list dl dt:first-child {margin-top:0}
+.text-body-list dl dd {margin-bottom:13px;color:#a6a6a6}
+
+/* 글자색상 & 화살표 & 기타 */
+.port{color:#2dc4a2}
+.buttonName{color:#ff4a4a}
+.osd{color:#ffb80d}
+.osdArrow{display:inline-block;width:13px;height:13px;background:url(../img/icon_arrow.png) no-repeat 0 0}
+.inline-block {display:inline-block}
+
+/* 이미지 */
+.story > .imgBox {margin-top:33px}
+.imgBox p img{border:1px solid #a6a6a6}
+.imgBox p + p {margin-top:20px}
+.imgBox + .text-body {margin-top:33px}
+.imgBox + .text-body ol{margin-top:33px}
+.imgBox .imglist{margin-top:20px;color:#a6a6a6}
+.imgBox .imglist li{position:relative;height:auto;margin-bottom:11px;padding-left:27px;font-size:19px;line-height:24px}
+.imgBox .imglist li:last-child{margin-bottom:0}
+.imgBox .imglist li:before{content:'';position:absolute;top:0;left:0;width:22px;height:22px;background-repeat:no-repeat}
+.imgBox .imglist li:nth-child(1):before{background-image:url(../img/number.png);background-position:0 0}
+.imgBox .imglist li:nth-child(2):before{background-image:url(../img/number.png);background-position:0 -22px}
+.imgBox .imglist li:nth-child(3):before{background-image:url(../img/number.png);background-position:0 -44px}
+.imgBox .imglist li:nth-child(4):before{background-image:url(../img/number.png);background-position:0 -66px}
+.imgBox .imglist li:nth-child(5):before{background-image:url(../img/number.png);background-position:0 -88px}
+.imgBox .imglist li:nth-child(6):before{background-image:url(../img/number.png);background-position:0 -110px}
+.imgBox .imglist li:nth-child(7):before{background-image:url(../img/number.png);background-position:0 -132px}
+.imgBox .imglist li:nth-child(8):before{background-image:url(../img/number.png);background-position:0 -154px}
+.imgBox .imglist li:nth-child(9):before{background-image:url(../img/number.png);background-position:0 -176px}
+.imgBox .imglist li:nth-child(10):before{background-image:url(../img/number.png);background-position:0 -198px}
+.imgBox .imglist li:nth-child(11):before{background-image:url(../img/number.png);background-position:0 -220px}
+.imgBox .imglist li:nth-child(12):before{background-image:url(../img/number.png);background-position:0 -242px}
+.imgBox .imglist li:nth-child(13):before{background-image:url(../img/number.png);background-position:0 -264px}
+.imgBox .imglist li:nth-child(14):before{background-image:url(../img/number.png);background-position:0 -286px}
+.imgBox .imglist li:nth-child(15):before{background-image:url(../img/number.png);background-position:0 -308px}
+.imgBox .imglist li:nth-child(16):before{background-image:url(../img/number.png);background-position:0 -330px}
+.imgBox .imglist li:nth-child(17):before{background-image:url(../img/number.png);background-position:0 -352px}
+.imgBox .imglist li:nth-child(18):before{background-image:url(../img/number.png);background-position:0 -375px}
+.imgBox .imglist li:nth-child(19):before{background-image:url(../img/number.png);background-position:0 -396px}
+.imgBox .imglist li:nth-child(20):before{background-image:url(../img/number.png);background-position:0 -418px}
+.imgBox .imglist .text-body-list {margin:17px 0}
+.imgBox .imglist .text-body-list dl dt {position:relative;margin-top:17px;padding-left:15px;font-size:19px}
+.imgBox .imglist .text-body-list dl dt:before {content:'● ';position:absolute;top:0;left:0;font-size:5px}
+.imgBox .imglist .text-body-list dl dd {margin-left:15px}
+
+
+/* 표 */
+.table-basic{width:100%;margin-top:33px;border-top:1px solid #a6a6a6;border-bottom:1px solid #a6a6a6;font-size:17px;color:#a6a6a6;border-collapse:collapse}
+.table-basic tr.thick-line{border-top:1px solid #a6a6a6}
+.table-basic td{padding-top:4px;padding-bottom:4px;padding-left:10px !important;padding-right:10px !important}
+.table-basic .table-basic-l{height:21px;border-bottom:1px solid #535353;font-size:17px;color:#fff;text-align:left !important;vertical-align:top}
+.table-basic .table-basic-l:nth-child(1){min-width:67px;white-space:nowrap}
+.table-basic .table-basic-l:nth-child(2){min-width:67px}
+.table-basic .table-basic-r{padding-bottom:33px;border-bottom:1px solid #535353;vertical-align:top;font-size:20px;line-height:27px}
+.table-basic .table-basic-r .text-body-note:last-of-type {margin-bottom:0}
+.table-basic + .text-body {margin-top:27px}
+
+/* 기존 표 수정용 */
+.table-basic.list{border:none;font-size:20px}
+.table-basic.list td{padding-left:0 !important;padding-right:0 !important}
+.table-basic.list .table-basic-l{padding:0 0 3px;border:none;font-size:20px;vertical-align:top}
+.table-basic.list .table-basic-r{padding:0 0 53px;border:none;vertical-align:top}
+.table-basic.list tr:last-child .table-basic-r{height:auto;padding:0}
+
+/* Q&A */
+.text-body-2{margin-top:53px;font-size:20px;line-height:27px}
+.text-body-2 dl dt{margin-bottom:17px;padding-left:40px;background:url(../img/icon_qna.png) no-repeat 0 0;color:#fff}
+.text-body-2 dl dd{margin-bottom:7px;padding-left:40px;background:url(../img/point2.png) no-repeat 27px 10px;font-size:19px;line-height:24px;color:#a6a6a6}
+.text-body-2 dl dd:last-child{margin-bottom:0}
+
+/* 링크 */
+a{display:inline-block;color:#2dc4a2;vertical-align:top;text-decoration:underline}
+.story > a{margin-top:30px}
+a .title-title-1{display:inline-block;margin-top:0}
+a:after{content:url(../img/icon_link.png);margin:0 3px 0 1px;vertical-align:top}
+a *{color:#2dc4a2 !important;vertical-align:top}
+
+/* RTL */
+html[dir=rtl] .title-title-1{padding-left:0;padding-right:23px;background-position:100% 5px}
+html[dir=rtl] .text-body ol > li{padding-left:0;padding-right:33px}
+html[dir=rtl] .text-body ol > li:before{left:auto;right:0}
+html[dir=rtl] .table-basic .table-basic-l{text-align:right !important}
+html[dir=rtl] .text-body-note{padding-left:0;padding-right:21px;background-position:100% 7px}
+html[dir=rtl] .text-body ol .text-body-note{margin-right:0}
+html[dir=rtl] .osdArrow{
+	-webkit-transform:rotate(180deg);
+	   -moz-transform:rotate(180deg);
+		 -o-transform:rotate(180deg);
+		-ms-transform:rotate(180deg);
+			transform:rotate(180deg)
+}
+html[dir=rtl] a:after{margin:0 1px 0 3px}
+html[dir=rtl] .text-body > ul{margin-left:0 !important;margin-right:7px !important}
+html[dir=rtl] .text-body ul > li{margin:0 7px 15px 0 !important;padding-left:0;padding-right:13px}
+html[dir=rtl] .text-body ul > li:before{left:auto;right:0}
+html[dir=rtl] .text-body-list {margin-left:0;margin-right:20px}
+html[dir=rtl] .imgBox .imglist li:before{left:auto;right:0}
+html[dir=rtl] .imgBox .imglist li{padding-left:0;padding-right:27px}
+html[dir=rtl] .imgBox .imglist .text-body-list dl dt {padding-left:auto;padding-right:15px}
+html[dir=rtl] .imgBox .imglist .text-body-list dl dt:before {left:auto;right:0}
+html[dir=rtl] .imgBox .imglist .text-body-list dl dd {margin-left:auto;margin-right:15px}
+html[dir=rtl] .text-body-2 dl dt{padding-left:0;padding-right:40px;background-image:url(../img/icon_qna_2.png);background-position:100% 0}
+html[lang=he] .text-body-2 dl dt{background-image:url(../img/icon_qna.png)}
+html[dir=rtl] .text-body-2 dl dd{padding-left:0;padding-right:40px;background-position:97% 10px}

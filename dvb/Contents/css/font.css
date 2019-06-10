@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* font */
+@font-face{ 
+	font-family:'Miso-Regular'; 
+	src:url('../../font/miso-regular.eot'); 
+	src:url('../../font/miso-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/miso-regular.woff') format('woff');
+}
+@font-face{
+	font-family:"Miso-Bold";
+	src:url('../../font/miso-bold.eot'); 
+	src:url('../../font/miso-bold.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/miso-bold.woff') format('woff');
+}
+@font-face{
+	font-family:"MuseoSans-Light";
+	src:url('../../font/Museo SansLight.eot'); 
+	src:url('../../font/Museo SansLight.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/Museo SansLight.woff') format('woff');
+}
+@font-face {
+	font-family: "MuseoSans-Medium";
+	src:url('../../font/Museo SansNormal.eot'); 
+	src:url('../../font/Museo SansNormal.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/Museo SansNormal.woff') format('woff');
+}
+@font-face{
+	font-family:"MuseoSans-Bold";
+	src:url('../../font/Museo SansBold.eot'); 
+	src:url('../../font/Museo SansBold.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/Museo SansBold.woff') format('woff');
+}
+@font-face{
+	font-family:"LG_Display-Light";
+	src:url('../../font/LG_Display-Light.eot'); 
+	src:url('../../font/LG_Display-Light.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/LG_Display-Light.woff') format('woff');
+}
+@font-face{
+	font-family:"LG_Display-Regular";
+	src:url('../../font/LG_Display.eot'); 
+	src:url('../../font/LG_Display.eot?#iefix') format('embedded-opentype'), 
+		url('../../font/LG_Display.woff') format('woff');
+}
+
+/* Á¦¸ñ */
+.title-title-1{font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.title-title-2{font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* ¹®Àå */
+.text-body{font-family:"MuseoSans-Medium","LG_Display-Light"}
+.text-body-note{font-family:"MuseoSans-Medium","LG_Display-Light"}
+
+/* ¸ñ·Ï */
+.text-body ol > li:before{font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* ¿É¼Ç ¸ñ·Ï */
+.text-body-list dl dt {font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.text-body-list dl dd {font-family:"MuseoSans-Medium","LG_Display-Light"}
+
+/* ÀÌ¹ÌÁö */
+.imgBox .imglist{font-family:"MuseoSans-Medium","LG_Display-Light"}
+
+/* Ç¥ */
+.table-basic{font-family:"MuseoSans-Medium","LG_Display-Light"}
+.table-basic .table-basic-l{font-family:"MuseoSans-Bold","LG_Display-Regular"}
+
+/* Q&A */
+.text-body-2 dl dt{font-family:"MuseoSans-Bold","LG_Display-Regular"}
+.text-body-2 dl dd{font-family:"MuseoSans-Medium","LG_Display-Light"}
+
+/* ¸µÅ© */
+a{font-family:"MuseoSans-Medium","LG_Display-Light"}
