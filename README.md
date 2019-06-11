@@ -1,1 +1,1 @@
-# Manual usuario LG OLED55E9PLA
+# Guía del usuario de la televisión LG OLED55E9PLA
